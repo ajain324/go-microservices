@@ -112,3 +112,10 @@ func (m *Movie) ListMovies(ctx *gin.Context) {
 		log.Debug("[ERROR]: ", err)
 	}
 }
+
+// func (m *Movie) SearchMovies(ctx *gin.Context) {
+// 	var movies []models.Movie
+// 	var err error
+
+// 	movies, err = m.movieDAO.Search()
+// }

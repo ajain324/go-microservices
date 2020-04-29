@@ -13,7 +13,7 @@
     "mgDbUsername": "",
     "mgDbPassword": "",
 
-    "authAddr": "http://127.0.0.1:8808",
+    // "authAddr": "http://127.0.0.1:8808",
     "jwtSecretPassword": "raycad",
     "issuer": "seedotech"
 }

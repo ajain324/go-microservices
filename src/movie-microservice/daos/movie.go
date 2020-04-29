@@ -33,6 +33,18 @@ func (m *Movie) GetAll() ([]models.Movie, error) {
 	return movies, err
 }
 
+// // Function for searching database
+// func (m *Movie) GetSearch() ([]models.Movie, error) {
+// 	sessionCopy := databases.Database.MgDbSession.Copy()
+// 	defer sessionCopy.Close()
+
+// 	collection := sessionCopy.DB(databases.Database.Databasename).C(COLLECTION)
+
+// 	var movies []models.Movie
+// 	err := collection.Find(bson.M{}).All(&movies)
+// 	return movies, err
+// }
+
 // GetByID finds a Movie by its id
 func (m *Movie) GetByID(id string) (models.Movie, error) {
 	sessionCopy := databases.Database.MgDbSession.Copy()
